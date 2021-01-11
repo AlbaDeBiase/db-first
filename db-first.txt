@@ -1,0 +1,26 @@
+provate a modellizzare la struttura di una tabella per rappresentare le informazioni di auto usate per un concessionario.
+
+nome tabella auto
+
+id  				INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+marca 				VARCHAR(100), NOT NULL, INDEX
+modello 			VARCHAT(50), NOT NULL
+versione 			TEXT, NULL 
+alimentazione			VARCHAR(50), NOT NULL 
+anno di immatricolazione	YEAR, NOT NULL 
+disponibilità			TINYINT, NOT NULL, DEFAULT(1)
+colore				VARCHAR(50), NOT NULL
+targa				VARCHAR(10), NOT NULL, UNIQUE, INDEX
+numero porte			TINYINT, NULL 
+numero posti			TINYINT, NULL 
+prezzo				DECIMAL(9.2), NULL
+cambio				VARCHAR(50), NULL
+carrozzeria 			VARCHAR(20), NULL
+localita(provincia)		VARCHAR(2), NOT NULL
+kilometraggio			DECIMAL(6.2), NOT NULL
+acquisto (si no)		TINYINT, DEFAULT(1)
+noleggio (si no)		TINYINT, DEFAULT(1)
+finanziabile			TINYINT DEFAULT(1)
+consegna si no a domicilio	TINIINT, DEFAULT(1)
+materiale interni 		VARCHAR(30), NULL 
+
